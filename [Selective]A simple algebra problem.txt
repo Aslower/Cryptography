@@ -1,0 +1,36 @@
+ Let p, N be integers such that p divides N. 
+ Prove that for any integer X, [[X mod N] mod p ] = [X mod p ]. 
+ Show that, in contrast, [[X mod p ] mod N] need not equal [X mod N].
+
+
+ Prove:(Seemingly not consider the numbers of integer namely numbers<0)
+    
+    (1)[[X mod N] mod p ] = [X mod p ]
+    ∵ p|N
+    ∴ N=k*p
+    Discussion:
+        if x <= N:
+            Obviously, [x mod N]mod p = x mod p is right.
+        if x > N:
+            let x=m*N+c, where m>0 & m is integer,c < N
+            also x=m*k*p+c
+            ∴ [x mod N]mod p = [m*N+c mod N]mod p = c mod p
+                =m*k*p+c mod p = c mod p = x mod p
+    So,[[X mod N] mod p ] = [X mod p ] is correct
+
+
+    (2)[[X mod p ] mod N] need not equal [X mod N]
+    The same as (1):
+        if x <= p:
+            Obviously, [[X mod p ] mod N] = [X mod N]
+        if x > p:
+            let x=n*p+r < (n+1)p ? N=k*p
+            when k=1:(namely N=p)
+                Obviously, [[X mod p ] mod N] = [X mod N]
+            if n<=k:
+                [x mod p]mod N = [np+r mod p]mod kp=
+                    =np+r mod kp = r = x mod N
+            if n>k:
+                Obviously, only when k|n, the equation is correct
+    SO, [[X mod p ] mod N] need not equal [X mod N]
+    

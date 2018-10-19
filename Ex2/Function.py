@@ -1,5 +1,4 @@
 import math
-
 import random
 
 def gcd(a,b):
