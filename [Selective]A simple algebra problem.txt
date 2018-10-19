@@ -1,3 +1,5 @@
+ https://github.com/Aslower/Cryptography/blob/master/%5BSelective%5DA%20simple%20algebra%20problem.txt
+ 
  Let p, N be integers such that p divides N. 
  Prove that for any integer X, [[X mod N] mod p ] = [X mod p ]. 
  Show that, in contrast, [[X mod p ] mod N] need not equal [X mod N].
