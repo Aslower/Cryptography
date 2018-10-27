@@ -14,12 +14,12 @@ def egcd(a,b):
         s0,s1=s1,s0-q*s1
     return a,r0,s0
 
-a2,b2=int(input("a=")),int(input("b="))
-a=gcd(a2,b2)
-aa,r,s=egcd(a2,b2)
+# a2,b2=int(input("a=")),int(input("b="))
+# a=gcd(a2,b2)
+# aa,r,s=egcd(a2,b2)
 
-print(r,s,aa)
-if aa==a and (r*a2+s*b2)==a:
-    print("Egcd is right")
-else:
-    print("Egcd is wrong")
+# print(r,s,aa)
+# if aa==a and (r*a2+s*b2)==a:
+#     print("Egcd is right")
+# else:
+#     print("Egcd is wrong")

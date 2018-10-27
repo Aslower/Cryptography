@@ -21,3 +21,4 @@ b=int(input("b="))
 
 print("gcd(a,b)=%d"%gcd(a,b))
 print("iteration_gcd(a,b)=%d"%iteration_gcd(a,b))
+
