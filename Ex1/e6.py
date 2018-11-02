@@ -30,18 +30,18 @@ print ("Answer:%s"%ans)
 
 
 #Batch gcd
-def producttree(X):
-       result = [X]
-       while len(X) > 1:
-         X = [prod(X[i*2:(i+1)*2]) for i in range((len(X)+1)/2)]
-         result.append(X)
-       return result
+# def producttree(X):
+#        result = [X]
+#        while len(X) > 1:
+#          X = [prod(X[i*2:(i+1)*2]) for i in range((len(X)+1)/2)]
+#          result.append(X)
+#        return result
        
-def batchgcd_faster(X):
-       prods = producttree(X)
-       R = prods.pop()
-       while prods:
-         X = prods.pop()
-         R = [R[floor(i/2)] % X[i]**2 for i in range(len(X))]
-       return [gcd(r/n,n) for r,n in zip(R,X)]
+# def batchgcd_faster(X):
+#        prods = producttree(X)
+#        R = prods.pop()
+#        while prods:
+#          X = prods.pop()
+#          R = [R[floor(i/2)] % X[i]**2 for i in range(len(X))]
+#        return [gcd(r/n,n) for r,n in zip(R,X)]
 
