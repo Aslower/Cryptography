@@ -49,7 +49,7 @@ int numberOfDigits(int a) {
 }
  
 void poy_dvid(int a,int b,int &q ,int &r) {
-    // int digit_a = numberOfDigits(a);
+    
     int digit_a = numberOfDigits(a);
     int digit_b = numberOfDigits(b);
     b = b << (digit_a - digit_b);
@@ -126,7 +126,7 @@ int main()
     int mat[8] = {0xF8, 0x7C, 0x3E,0x1F,0x8F,0xC7,0xE3,0xF1};
     int c = 0x63;
     int a = 0x11B;
-    int s[16][16];
+    int s[16][16];   //GF(2^8)
     for(int i = 0;i < 16;i++) {
         for(int j = 0;j < 16;j++) {
             s[i][j] = i * 16 + j;

@@ -138,6 +138,7 @@ int main(int argc, char const *argv[])
     //不可约多项式 P(x) = x8 + x4 +x3 + x2 + 1
     //==> x8=x4+x3+x2+1   [1 0001 1101]
     cout<<GF_mul(129,5)<<endl;
+    
    for(int i=1;i<20;i++)
     cout<<numberOfDigits(i);
 
